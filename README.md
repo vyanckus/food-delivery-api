@@ -5,7 +5,7 @@ REST API для сервиса доставки еды. Приложение п�
 🔄 CI/CD Pipeline
 -----------------
 
-[https://github.com/vyanckus/food-delivery-api/actions/workflows/ci-cd.yml/badge.svg](https://github.com/vyanckus/food-delivery-api/actions/workflows/ci-cd.yml/badge.svg)
+![CI/CD Status](https://github.com/vyanckus/food-delivery-api/actions/workflows/ci-cd.yml/badge.svg)
 
 Проект использует автоматизированный CI/CD pipeline на GitHub Actions:
 
