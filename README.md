@@ -2,8 +2,7 @@
 
 REST API для сервиса доставки еды. Приложение предоставляет каталог блюд и функционал оформления заказов.
 
-🔄 CI/CD Pipeline
------------------
+## 🔄 CI/CD Pipeline
 
 ![CI/CD Status](https://github.com/vyanckus/food-delivery-api/actions/workflows/ci-cd.yml/badge.svg)
 
@@ -39,16 +38,15 @@ Push/Pull Request → Тестирование → Сборка JAR → Docker B
 
 ### 🚀 Автоматический деплой:
 
-При пуше в ветку `main` происходит автоматический деплой на [Render.com](https://render.com/)
+При пуше в ветку `main` происходит автоматический деплой на [Railway.com](https://railway.com/)
 
-🌐 Работающее приложение
-------------------------
+## 🌐 Работающее приложение
 
 Production версия развернута и доступна по адресу:
 
 
 ```
-https://food-delivery-api-3xgc.onrender.com
+https://food-delivery-api-production-bee8.up.railway.app
 ```
 
 Примеры работающих запросов:
@@ -56,10 +54,10 @@ https://food-delivery-api-3xgc.onrender.com
 
 ```
 # Получить все категории
-https://food-delivery-api-3xgc.onrender.com/catalog
+https://food-delivery-api-production-bee8.up.railway.app/catalog
 
 # Получить товары категории 1
-https://food-delivery-api-3xgc.onrender.com/catalog/1
+https://food-delivery-api-production-bee8.up.railway.app/catalog/1
 ```
 
 ## 🚀 Функциональность
@@ -70,7 +68,7 @@ https://food-delivery-api-3xgc.onrender.com/catalog/1
 
 ## 🛠 Технологии
 
-- **Java 19**
+- **Java 17**
 - **Spring Boot 3**
 - **PostgreSQL**
 - **Docker & Docker Compose**
@@ -88,8 +86,7 @@ https://food-delivery-api-3xgc.onrender.com/catalog/1
 ### Заказы
 - `POST /cart` - создать новый заказ
 
-📝 Примеры запросов
--------------------
+## 📝 Примеры запросов
 
 ### Получить категории
 
@@ -130,8 +127,7 @@ Content-Type: application/json
 }
 ```
 
-🗃️ Настройка базы данных
--------------------------
+## 🗃️ Настройка базы данных
 
 ### Локальная разработка
 
@@ -147,17 +143,15 @@ spring.datasource.password=ваш_пароль
 spring.datasource.password=ваш_локальный_пароль
 ```
 
-### Production ([Render.com](https://render.com/))
+### Production ([Railway](https://railway.com/))
 
-*   Автоматически создается через Docker Compose
+*   Автоматически развертывается через Docker
+*   Переменные окружения настраиваются в Railway Dashboard
+*   База данных PostgreSQL предоставляется как отдельный сервис Railway
+*   Приложение доступно по адресу: `https://food-delivery-api-production-bee8.up.railway.app`
 
-*   Переменные окружения настраиваются в Render Dashboard
 
-*   Пароль хранится в защищенных environment variables
-
-
-📊 Логирование
---------------
+## 📊 Логирование
 
 Приложение использует многоуровневое логирование через SLF4J:
 
@@ -173,8 +167,7 @@ spring.datasource.password=ваш_локальный_пароль
 
 *   TRACE \- максимально подробное логирование
 
-📚 Генерация JavaDoc
---------------------
+## 📚 Генерация JavaDoc
 
 ### Сгенерировать документацию:
 
@@ -190,8 +183,7 @@ mvn javadoc:javadoc
 
 Все классы и методы снабжены комментариями на русском языке.
 
-📁 Структура проекта
---------------------
+## 📁 Структура проекта
 
 text
 
